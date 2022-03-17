@@ -1,3 +1,18 @@
+@import url(//db.onlinewebfonts.com/c/9b06ae83a4412168ed194a8ed31218c2?family=Mabry+Pro+Medium);
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	@font-face {
+		font-family: 'Mabry Pro';
+		src: url('./assets/fonts/MabryPro-Regular.woff2') format('woff2');
+		font-weight: normal;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	body {
+		@apply font-Mabry-Pro;
+	}
+}

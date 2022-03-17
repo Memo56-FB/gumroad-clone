@@ -1,0 +1,21 @@
+.footer__email {
+	@apply focus:outline-none focus:border-none;
+	@apply py-4 px-6;
+	@apply rounded-t-md;
+	@apply text-black text-center text-lg;
+}
+.footer__links {
+	@apply grid text-lg mt-10;
+	div {
+		@apply grid gap-y-1;
+	}
+}
+.footer__social {
+	@apply flex justify-between;
+	@apply mt-8;
+}
+
+.footer__links a,
+.footer__social a {
+	@apply hover:text-ex_pink transition-colors duration-75;
+}
