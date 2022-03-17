@@ -1,0 +1,17 @@
+.header {
+	@apply fixed top-0 bg-white w-full;
+	@apply border-b-2 border-black;
+	@apply flex justify-between items-center;
+	@apply px-6 sm:px-8;
+	@apply py-4;
+	&__logo {
+		@apply w-[55%];
+	}
+	&__menu {
+		@apply flex flex-col justify-between;
+		@apply h-3 w-8;
+		div {
+			@apply h-[2px] bg-black w-full;
+		}
+	}
+}
