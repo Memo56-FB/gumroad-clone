@@ -1,45 +1,72 @@
+import { useEffect, useState } from 'react'
 import './App.scss'
 import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
 
 function App() {
 	return (
-    <>
-      <Header />
-      <main className='pt-28 xl:pt-0 bg-blue-200'>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime assumenda voluptatibus mollitia? Esse, iste, porro perferendis nobis odit ad fugit facere in aperiam sequi aut? Voluptates ipsum reiciendis perferendis possimus?
-        Harum iste rerum explicabo perferendis cumque hic? Aut at ipsum perspiciatis sint eaque sed sequi delectus porro laborum ad deleniti, rerum maxime alias dolores quibusdam omnis! Inventore ducimus nostrum odio!
-        Earum harum, itaque dolor dicta at doloremque officiis consequatur inventore, dolorum qui accusamus! Id enim impedit assumenda eum nobis laudantium. Voluptatibus explicabo facilis, expedita id minus nobis officiis sint. Accusamus.
-        Maxime omnis neque deserunt aliquam nostrum quod id veritatis delectus ab perspiciatis! Sed ipsam maxime minima sequi animi deserunt placeat doloremque veniam ipsa cum, porro ducimus, cupiditate excepturi, enim dolorum?
-        Sit minus assumenda sunt! Debitis rem quo quasi accusantium, voluptatibus et quam sunt esse error ipsam molestiae optio dolor consectetur asperiores perspiciatis voluptas nulla quae. Itaque quod obcaecati quasi quidem!
-        Beatae possimus exercitationem ut praesentium, consequatur deleniti in quisquam, maxime porro inventore quibusdam, reiciendis iure hic magnam eveniet pariatur voluptate similique expedita architecto ipsam deserunt reprehenderit. Facilis neque est reiciendis.
-        Velit fugit officia harum! Doloremque vel voluptates itaque inventore voluptate laborum, cum perspiciatis sapiente magnam qui distinctio corporis tenetur, laudantium a maxime ut iure eligendi quibusdam ipsa dignissimos. Quas, facere.
-        Officia delectus itaque soluta officiis accusamus architecto iure, corporis vitae laborum, a, magnam dolore voluptate blanditiis consectetur nesciunt dicta dolores laboriosam excepturi beatae? Quis alias voluptatibus consequatur. Sequi, itaque iure.
-        Dolor cumque numquam impedit. Facere autem dolor facilis eos voluptate nemo veniam incidunt architecto libero at dicta cum repellat repudiandae quia, dignissimos molestiae consequatur impedit omnis accusantium tempore. Odio, aspernatur!
-        Officia ex impedit culpa esse laborum fugiat totam eius, vero facere corporis atque quis magnam! Rem voluptatem autem quae ad provident facilis incidunt ipsum explicabo iusto, ipsam a ipsa ex!
-        Vero enim, dignissimos sint eaque laborum voluptatum odit totam in praesentium non corporis quasi excepturi magni ex esse, reprehenderit nihil nam veniam repellendus iste maiores modi deleniti similique? Rerum, odit.
-        Quasi, sed excepturi recusandae eos adipisci, eveniet atque quae veritatis quo explicabo in consequatur necessitatibus porro at inventore pariatur! Debitis odit accusamus cumque laudantium quis labore dolores ipsum officiis minus?
-        Odit tenetur excepturi minus veritatis fugit ullam expedita nemo assumenda, cumque at error fugiat animi ex veniam officiis dolorem consequuntur? Veritatis consequuntur vel, reiciendis fugiat quas soluta autem ipsum optio.
-        Magnam doloremque numquam esse quos, dolor, iste labore voluptate ratione aperiam praesentium sint quasi ullam possimus optio inventore nam provident officia! Corrupti eos earum quod accusamus exercitationem labore praesentium eius.
-        Officiis eum est dicta, consectetur magni totam nihil ex odit nesciunt voluptas recusandae incidunt ut animi. Libero quos perferendis, ipsa quasi est quam dignissimos ad, fugiat vitae porro laborum labore?
-        Reprehenderit, nisi autem praesentium deserunt consequatur facere, debitis aliquid alias id unde error voluptate eos? Quis suscipit fugiat a! Quo necessitatibus optio saepe voluptatibus architecto officia odit ullam accusamus nobis.
-        Asperiores culpa possimus, optio accusamus veritatis laborum at? Doloremque, asperiores in et ducimus ab praesentium cumque omnis ex reprehenderit. Voluptas iste doloremque odit ipsa accusantium explicabo culpa magni maxime voluptatibus.
-        Dolore minus doloremque sequi repudiandae cum accusamus libero, facere ex. Tempore non quam ab aperiam blanditiis facere commodi? Nobis repellendus vitae recusandae velit minus officiis necessitatibus porro nulla odit. Architecto!
-        Minus necessitatibus quasi tempore perferendis, blanditiis quia saepe voluptatem! Cum beatae molestiae nihil, excepturi quidem fuga ex maiores temporibus id nam obcaecati! Fugit architecto error asperiores natus doloribus reiciendis harum!
-        Blanditiis sint ratione illo nostrum, veritatis quas aut laboriosam tempora accusamus. Numquam ipsum maiores sed? Minima repellendus praesentium eligendi ipsa quos impedit? Aperiam, provident magni dolore enim velit doloribus expedita?
-        Voluptate sed voluptatibus in illum laboriosam saepe alias repellendus, consectetur magnam fugit sunt, nemo cupiditate atque similique labore dolore laborum fuga est tempore officia corporis. Quis quam praesentium quod optio!
-        Eaque pariatur quae inventore facere et nesciunt nemo eligendi at repellat exercitationem laborum voluptates, eius ex amet tempora non, culpa molestiae beatae ipsum placeat ab quidem, quibusdam atque. Ducimus, voluptatibus.
-        Nostrum perspiciatis minus sunt possimus. Fugit, inventore laborum. Fuga modi assumenda quo pariatur earum atque ducimus voluptatum ratione nobis dignissimos odit, explicabo beatae distinctio autem quidem sapiente architecto accusamus amet?
-        Laudantium deleniti pariatur ratione nobis. Rerum fuga est asperiores incidunt! Quas dicta, non animi ipsam alias eius? Suscipit est vero explicabo veritatis quod, nihil sequi quidem facere voluptas excepturi dicta!
-        Expedita, tempore doloribus, rerum laboriosam ducimus officiis omnis fugiat consectetur nam amet qui. Officia modi libero dolorem cum, aliquam illum omnis accusantium enim blanditiis? Quasi alias nihil quis dolore voluptatem!
-        Officia corrupti voluptatum tenetur autem neque! Temporibus commodi incidunt amet veniam error beatae consectetur, ullam nesciunt voluptates nobis magni maxime, a, facilis autem omnis minima odit adipisci ratione officia iure!
-        Aut maiores facere dicta dolor? Doloribus iusto magni inventore est, ea optio nesciunt aperiam sed praesentium quod repudiandae architecto necessitatibus cupiditate tempora ad perferendis commodi voluptate quidem. Accusamus, exercitationem ipsam.
-        Sed ullam eaque ratione officiis magnam aspernatur assumenda exercitationem libero quidem! Perferendis laudantium, fuga ex velit nostrum ut eaque exercitationem voluptates dolore, porro quaerat, autem aut? Quam odit libero ad?
-        Totam cupiditate quis maxime officia nobis ea odit in quasi repellat corrupti animi tempora molestias dolores cum, veritatis architecto reprehenderit sed id, minus officiis eius voluptatibus iure dignissimos! Vitae, odio?
-        Dolores, minus. Ipsa vel veritatis minus repudiandae, tempore deleniti, fugit, tenetur dolore sint eius eum blanditiis facilis esse qui? Dolorum enim consectetur aperiam eveniet, alias possimus omnis itaque eos fuga.
-      </main>
-      <Footer />
-    </>
+		<>
+			<Header />
+			<main>
+				<section className='grid lg:grid-cols-2 bg-white  lg:mt-20 xl:mt-0'>
+					<div className='px-6 lg:px-[6.5vw] pb-20 bg-ex_pink pt-28 grid gap-y-8 border-b-2 lg:border-b-0 lg:border-r-2 lg border-black'>
+						<h2 className='text-center text-6xl lg:text-left lg:text-7xl xl:text-8xl 2xl:text-9xl'>
+							Go from zero to $1
+						</h2>
+						<p className='text-xl text-center lg:text-2xl lg:text-left 2xl:text-3xl'>
+							With Gumroad, anyone can earn their first dollar online. Just
+							start with what you know, see what sticks, and get paid. It’s that
+							easy.
+						</p>
+						<button className='py-3 px-6 bg-black text-white rounded-md xl:w-3/5 xl:py-1 xl:px-2 xl:text-2xl 2xl:self-center 2xl:py-8'>
+							Start Selling
+						</button>
+					</div>
+					<div className='grid lg:gap-y-16 bg-ex_yellow px-6 pt-16 pb-20 lg:pb-4 overflow-x-hidden'>
+						<figure className='relative w-full lg:w-10/12 lg:justify-self-center'>
+							<img
+								src='https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/61942b84ec3d406199f07d78_vegalia.png'
+								alt='mujes afroamericana'
+							/>
+							<img
+								src='https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619f97a0f047aaa46093f3b3_paint-brush.svg'
+								alt='brocha gruesa'
+								className='absolute -right-7 top-6 w-[5.5rem] lg:w-[35%] xl:w-1/5 lg:top-16'
+							/>
+							<img
+								src='https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/6195275a9e5f4655891de886_gum-coins.svg'
+								alt='monedas con una g'
+								className='absolute w-36 -bottom-14 left-0 lg:w-1/2 xl:w-1/3 lg:-bottom-8'
+							/>
+							<button className='flex items-center gap-x-2 py-1 px-2 lg:py-2 lg:px-4 xl:text-2xl rounded-full border-2 border-black bg-white absolute right-0 bottom-0 lg:bottom-12 lg:-right-10'>
+								<img
+									src='https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/6183f718541d5d3584e9f6da_g.svg'
+									alt='moneda morada con una G'
+									className='w-7'
+								/>
+								Vegalia
+							</button>
+						</figure>
+						<p className='hidden lg:block'>Vegalia sells Procreate Brushes</p>
+					</div>
+					<div className='text-animated'>
+						<p>
+							See what sticks <span>•</span>
+						</p>
+						<p>
+							See what sticks <span>•</span>
+						</p>
+						<p>
+							See what sticks <span>•</span>
+						</p>
+						<p>
+							See what sticks <span>•</span>
+						</p>
+					</div>
+				</section>
+			</main>
+			<Footer />
+		</>
 	)
 }
 

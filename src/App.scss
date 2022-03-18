@@ -1,0 +1,11 @@
+.text-animated {
+	@apply bg-black text-white col-span-full;
+	@apply overflow-x-hidden flex gap-x-3;
+	@apply text-3xl lg:text-4xl xl:text-6xl 2xl:text-7xl;
+	@apply py-4 mb-20;
+
+	p,
+	span {
+		@apply whitespace-nowrap;
+	}
+}

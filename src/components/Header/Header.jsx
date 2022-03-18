@@ -33,7 +33,7 @@ const Header = () => {
 					className='w-full'
 				></img>
 			</figure>
-			<header className={`${showMenu ? 'bg-black' : 'bg-white'} header`}>
+			<header className={`${showMenu ? 'bg-black' : 'bg-white'} header z-50`}>
 				<nav className='header__nav'>
 					<a href='#' className='header__logo z-20'>
 						<svg
