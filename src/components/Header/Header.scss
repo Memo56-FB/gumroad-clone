@@ -1,17 +1,88 @@
 .header {
-	@apply fixed top-0 bg-white w-full;
-	@apply border-b-2 border-black;
-	@apply flex justify-between items-center;
-	@apply px-6 sm:px-8;
-	@apply py-4 md:py-6;
+	@apply fixed xl:sticky -top-1 xl:bg-white w-full;
+	@apply border-b-2 xl:border-0 border-black;
+	@apply flex xl:flex-col;
+	@apply px-6 sm:px-8 xl:px-0;
+	@apply py-4 md:py-6 xl:py-0;
+	@apply transition-all duration-500;
 	&__logo {
-		@apply w-[55%] md:w-1/3;
+		@apply w-[55%] md:w-1/3 xl:w-1/6;
 	}
 	&__menu {
-		@apply flex flex-col justify-between;
+		@apply flex xl:hidden flex-col justify-between;
 		@apply h-3 w-8 md:w-10;
 		div {
 			@apply h-[2px] bg-black w-full;
+			@apply transition-transform duration-500;
 		}
 	}
+	&__nav {
+		@apply flex justify-between items-center w-full;
+		@apply xl:border-y-2 xl:border-black;
+		@apply xl:pl-6;
+		&-wrapper {
+			@apply absolute xl:relative left-0 top-full xl:top-0 w-full;
+			@apply flex flex-col-reverse justify-end xl:grid xl:items-center xl:grid-cols-[1fr_auto];
+			@apply grid-rows-[auto_1fr] xl:grid-rows-none;
+			@apply bg-black text-white xl:bg-transparent xl:text-black;
+			@apply text-left;
+			@apply pl-6;
+			@apply h-[95vh] xl:h-auto;
+			@apply xl:translate-y-[0];
+			@apply transition-all duration-500 ease-in-out xl:transition-none;
+		}
+		&__ul {
+			@apply justify-self-center;
+			@apply flex flex-col xl:flex-row;
+			@apply xl:text-lg;
+			@apply gap-x-14;
+			@apply gap-y-5 xl:gap-y-0;
+			@apply mt-5 xl:mt-0;
+		}
+		li > a {
+			@apply inline-block relative;
+			// animación de la línea de abajo
+			@apply after:content-[''] after:absolute;
+			@apply after:scale-x-0;
+			@apply after:h-[1px] after:w-full;
+			@apply after:bottom-0 after:left-0;
+			@apply after:bg-black;
+			@apply after:origin-bottom-left;
+			@apply after:transition-transform after:ease-in after:duration-200;
+			// hover
+			@apply hover:text-ex_pink xl:hover:text-black;
+			@apply after:hover:scale-x-100 after:hover:origin-bottom-left;
+		}
+	}
+	&__secondary {
+		@apply flex flex-col items-start xl:items-center xl:flex-row xl:block;
+		@apply xl:justify-self-end;
+		@apply gap-y-5 xl:gap-y-0;
+		@apply py-4 xl:py-0;
+		@apply border-y-[1px] border-gray-600 xl:border-0;
+		&__login {
+			@apply xl:border-x-2 xl:border-black;
+		}
+		&__selling {
+			@apply xl:bg-black xl:text-white;
+		}
+		&__login,
+		&__selling {
+			@apply xl:p-[1.5rem_3vw];
+			@apply hover:text-ex_pink xl:hover:bg-ex_pink xl:hover:text-black;
+		}
+	}
+}
+//Animación del icono para mobile
+.open-first {
+	@apply rotate-45 translate-y-[5px] invert;
+}
+.close-first {
+	@apply rotate-0 translate-y-0 invert-0;
+}
+.open-second {
+	@apply -rotate-45 -translate-y-[5px] invert;
+}
+.close-second {
+	@apply rotate-0 translate-y-0 invert-0;
 }
